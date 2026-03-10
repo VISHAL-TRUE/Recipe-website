@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salt & Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+  <!-- LOGIN MODAL -->
+<div id="loginModal" class="login-modal">
+  <div class="login-box">
+    <h2>🔐 Login to Salt & Story</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+    <button class="secondary" onclick="register()">Register</button>
+
+    <p id="loginMsg"></p>
+  </div>
+</div>
+
+<!-- LOGOUT BUTTON -->
+<button id="logoutBtn" onclick="logout()">Logout</button>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Salt & Story</h1>
+      <p>Where every flavor tells a tale.</p>
+    </div>
+  </header>
+
+  <!-- Sticky Search Bar -->
+  <div class="search-wrapper">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="🔍 Search recipes, ingredients, or categories..."
+    >
+  </div>
+
+  <!-- No Results Message -->
+  <div id="noResults" class="no-results">
+    😕 No recipes found. Try a different keyword.
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- Easy & Quick Meals -->
+    <section class="category-section">
+      <h2 class="section-title">⚡ Easy & Quick Meals</h2>
+      <p class="section-subtitle">Quick meals for busy days.</p>
+      <div class="scroll-container" id="easy"></div>
+    </section>
+
+    <!-- Oil-Free Healthy Recipes -->
+    <section class="category-section">
+      <h2 class="section-title">🥗 Oil-Free Healthy Recipes</h2>
+      <p class="section-subtitle">Healthy, light, and oil-free cooking.</p>
+      <div class="scroll-container" id="oilfree"></div>
+    </section>
+
+    <!-- Guilt-Free Junk Food -->
+    <section class="category-section">
+      <h2 class="section-title">🍟 Guilt-Free Junk Food</h2>
+      <p class="section-subtitle">All the taste, none of the guilt.</p>
+      <div class="scroll-container" id="junk"></div>
+    </section>
+
+    <!-- Breakfast Specials -->
+    <section class="category-section">
+      <h2 class="section-title">🍳 Breakfast Specials</h2>
+      <p class="section-subtitle">Start your day the tasty way.</p>
+      <div class="scroll-container" id="breakfast"></div>
+    </section>
+
+    <!-- Kids' Favorites -->
+    <section class="category-section">
+      <h2 class="section-title">🧒 Kids’ Favorites</h2>
+      <p class="section-subtitle">Fun, colorful, and kid-approved meals.</p>
+      <div class="scroll-container" id="kids"></div>
+    </section>
+
+    <!-- Desserts -->
+    <section class="category-section">
+      <h2 class="section-title">🍰 Desserts</h2>
+      <p class="section-subtitle">Sweet endings to every story.</p>
+      <div class="scroll-container" id="dessert"></div>
+    </section>
+
+    <!-- Millet Magic -->
+    <section class="category-section">
+      <h2 class="section-title">🌾 Millet Magic</h2>
+      <p class="section-subtitle">Traditional grains with a modern twist.</p>
+      <div class="scroll-container" id="millet"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Salt & Story. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
